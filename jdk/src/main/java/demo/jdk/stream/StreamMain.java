@@ -1,15 +1,13 @@
 package demo.jdk.stream;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
-
 import demo.jdk.entity.Person;
+
+
 
 public class StreamMain {
 	

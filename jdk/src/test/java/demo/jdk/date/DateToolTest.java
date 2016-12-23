@@ -10,7 +10,9 @@ public class DateToolTest extends TestCase {
 		
 		Date currentDate = new Date();
 		
-		for(int addHour = 0; addHour <= 24 * 365 * 10000; addHour ++) {
+		// 24 * 365 * 10000
+		long total = 24 * 365 * 10;
+		for(int addHour = 0; addHour <= total; addHour ++) {
 			
 			Date currentHourStart = DateTool.hourStart(currentDate);
 			
@@ -31,6 +33,8 @@ public class DateToolTest extends TestCase {
 				System.out.println(" \t currentHourStartTimeMillisSecond: " + currentHourStartTimeMillisSecond);
 				System.out.println(" \t hourAddTimeMillisSecond: " + hourAddTimeMillisSecond);
 				
+			} else {
+				System.out.println(" \t test cuont: " + (addHour + 1) + "  totalCount: " +  total);
 			}
 
 			
